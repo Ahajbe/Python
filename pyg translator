@@ -1,0 +1,18 @@
+pyg = 'ay'
+
+original = raw_input('Enter a word:')
+
+word=original.lower()
+first=word[0]
+new_word=word[1:]+word[0]+pyg
+if len(word) > 0 and word.isalpha():
+    print word
+    
+    if first=="a" or first=="e" or first=="i" or first=="o" or first=="u":
+        print "vowel"
+        print word+pyg
+    else:
+        print "consonant" 
+        print new_word
+else:    
+    print 'empty'
